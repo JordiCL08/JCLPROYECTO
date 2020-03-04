@@ -11,6 +11,7 @@ import org.junit.Test;
 public class TestASumar {
 
 	/**
+	 *
 	 * Si el resultado es = 7 sera valida 
 	 */
 	@Test
@@ -19,5 +20,16 @@ public class TestASumar {
 		String resultado = sumi.mostrar();
 		assertEquals("7=7",resultado);
 	}
-		
+
+	/*
+	 * si es negativo el espacio queda vacío
+	 */
+	@Test
+	public void testNegativo() {
+		ASumar sumi = new ASumar("-1");
+		String resultado = sumi.mostrar();
+		assertEquals("", resultado);
+		}
+	
+
 }
