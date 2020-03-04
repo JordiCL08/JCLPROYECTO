@@ -30,4 +30,19 @@ public class ASumar {
 			return null;
 	}
 	
+	/**
+	 * @return suma de los digitos de una cadena numerica
+	 */
+	public int total() {
+        int suma = 0;
+
+        for (int i = 0; i < valor_inicial.length(); i++) {
+            // Cadena de un dígito.
+            String digito = valor_inicial.substring(i, 1);
+            suma = suma + Integer.getInteger(digito);
+        }
+        return suma;
+
+    }
+	
 }
